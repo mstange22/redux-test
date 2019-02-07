@@ -1,27 +1,38 @@
 // initial state
 const initialState = {
-  value: 0,
+  a: 0,
+  b: 0,
 };
 
 // constants
 const types = {
-  SET_VALUE: 'SET_VALUE',
+  SET_VALUE_A: 'SET_VALUE_A',
+  SET_VALUE_B: 'SET_VALUE_B',
 };
 
 // actions
-export const setValue = (value) => ({
-  type: types.SET_VALUE,
+export const setValueA = a => ({
+  type: types.SET_VALUE_A,
   payload: {
-    value,
+    a,
+  },
+});
+
+export const setValueB = b => ({
+  type: types.SET_VALUE_B,
+  payload: {
+    b,
   },
 });
 
 // reducer
 export const reducer = (state = initialState, action = {}) => {
-  console.log(action);
+  // console.log(action);
   switch (action.type) {
-    case types.SET_VALUE:
-      return { state: { ...initialState, value: action.payload.value } };
+    case types.SET_VALUE_A:
+      return { ...state, a: action.payload.a };
+    case types.SET_VALUE_B:
+      return { ...state, b: action.payload.b };
     default:
       return state;
   }
