@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
 import './App.css';
 import UserInput from './UserInput';
 import Addition from './Addition';
@@ -27,12 +26,4 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-
-});
-
-const mapDispatchToProps = {
-
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

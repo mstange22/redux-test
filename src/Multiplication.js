@@ -4,14 +4,15 @@ import { connect } from 'react-redux';
 
 class Multiplication extends Component {
   render() {
+    const { a, b } = this.props;
     return (
       <div className="multiplication-container">
         <h2>Multiplication</h2>
-        <h2>{this.props.a}</h2>
+        <h2>{a}</h2>
         <h2>*</h2>
-        <h2>{this.props.b}</h2>
+        <h2>{b}</h2>
         <h2>=</h2>
-        <h2>{this.props.a * this.props.b}</h2>
+        <h2>{a * b}</h2>
       </div>
     );
   }

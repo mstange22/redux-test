@@ -4,14 +4,15 @@ import { connect } from 'react-redux';
 
 class Division extends Component {
   render() {
+    const { a, b } = this.props;
     return (
       <div className="division-container">
         <h2>Division</h2>
-        <h2>{this.props.a}</h2>
+        <h2>{a}</h2>
         <h2>/</h2>
-        <h2>{this.props.b}</h2>
+        <h2>{b}</h2>
         <h2>=</h2>
-        <h2>{this.props.a / this.props.b}</h2>
+        <h2>{a === 0 ? 0 : a / b}</h2>
       </div>
     )
   }
