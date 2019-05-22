@@ -1,22 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-class Addition extends Component {
-  render() {
-    const { a, b } = this.props;
-    return (
-      <div className="addition-container">
-        <h2>Addition</h2>
-        <h2>{a}</h2>
-        <h2>+</h2>
-        <h2>{b}</h2>
-        <h2>=</h2>
-        <h2>{a + b}</h2>
-      </div>
-    )
-  }
-}
+const Addition = ({ a, b }) => (
+  <div className="addition-container">
+    <h2>Addition</h2>
+    <h2>{a}</h2>
+    <h2>+</h2>
+    <h2>{b}</h2>
+    <h2>=</h2>
+    <h2>{a + b}</h2>
+  </div>
+);
 
 Addition.propTypes = {
   a: PropTypes.number.isRequired,

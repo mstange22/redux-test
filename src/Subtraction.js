@@ -1,22 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-class Subtraction extends Component {
-  render() {
-    const { a, b } = this.props;
-    return(
-      <div className="subtraction-container">
-        <h2>Subtraction</h2>
-        <h2>{a}</h2>
-        <h2>-</h2>
-        <h2>{b}</h2>
-        <h2>=</h2>
-        <h2>{a - b}</h2>
-      </div>
-    );
-  }
-}
+const Subtraction = ({ a, b }) => (
+  <div className="subtraction-container">
+    <h2>Subtraction</h2>
+    <h2>{a}</h2>
+    <h2>-</h2>
+    <h2>{b}</h2>
+    <h2>=</h2>
+    <h2>{a - b}</h2>
+  </div>
+);
 
 Subtraction.propTypes = {
   a: PropTypes.number.isRequired,

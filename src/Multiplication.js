@@ -1,22 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-class Multiplication extends Component {
-  render() {
-    const { a, b } = this.props;
-    return (
-      <div className="multiplication-container">
-        <h2>Multiplication</h2>
-        <h2>{a}</h2>
-        <h2>*</h2>
-        <h2>{b}</h2>
-        <h2>=</h2>
-        <h2>{a * b}</h2>
-      </div>
-    );
-  }
-}
+const Multiplication = ({ a, b }) => (
+  <div className="multiplication-container">
+    <h2>Multiplication</h2>
+    <h2>{a}</h2>
+    <h2>*</h2>
+    <h2>{b}</h2>
+    <h2>=</h2>
+    <h2>{a * b}</h2>
+  </div>
+);
 
 Multiplication.propTypes = {
   a: PropTypes.number.isRequired,

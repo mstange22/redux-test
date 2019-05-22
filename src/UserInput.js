@@ -6,7 +6,7 @@ import { setValueA, setValueB } from './redux/reducer';
 class UserInput extends Component {
 
   onChange = (e) => {
-    const {name, value } = e.target;
+    const { name, value } = e.target;
     if (/^\d+$/.test(value) || value === '') {
       if (name === 'a') this.props.setValueA(value === '' ? 0 : value);
       else this.props.setValueB(value === '' ? 0 : value);
@@ -26,6 +26,7 @@ class UserInput extends Component {
             onChange={this.onChange}
             value={this.props.a}
             autoComplete="off"
+            autoFocus
           />
           <br />
           <input
