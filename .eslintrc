@@ -11,7 +11,8 @@
     "amd": true,
     "es6": true,
     "node": true,
-    "mocha": true
+    "mocha": true,
+    "jest": true
   },
   "rules": {
     "quotes": [1, "single"],
@@ -29,6 +30,14 @@
     "class-methods-use-this": "off",
     "no-loop-func": 0,
     "no-param-reassign": 0,
-    "no-restricted-syntax": 0
-  }
+    "no-restricted-syntax": 0,
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [],
+      "specialLink": [ "hrefLeft", "hrefRight" ],
+      "aspects": [ "noHref", "invalidHref", "preferButton" ]
+    }],
+    "react/destructuring-assignment": 0,
+    "jsx-a11y/no-autofocus": 0
+  },
+  "plugins": ["jest"]
 }
