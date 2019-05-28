@@ -61,7 +61,7 @@ class App extends Component {
   }
 
   render() {
-    const { showPopUp } = this.state;
+    // const { showPopUp } = this.state;
     return (
       <div className="app">
         { this.renderPopUp() }
@@ -70,9 +70,9 @@ class App extends Component {
           <Subtraction />
         </div>
         <div className="middle">
-          <button type="submit" onClick={() => this.setState({ showPopUp: !showPopUp })}>
+          {/* <button type="submit" onClick={() => this.setState({ showPopUp: !showPopUp })}>
             Pop-Up
-          </button>
+          </button> */}
           <UserInput />
         </div>
         <div className="bottom">
