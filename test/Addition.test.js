@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Addition from '../src/Addition';
+import Addition from '../src/components/Addition';
 
 xtest('This is a test', () => {
   const component = renderer.create(

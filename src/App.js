@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
-import UserInput from './UserInput';
-import Addition from './Addition';
-import Subtraction from './Subtraction';
-import Multiplication from './Multiplication';
-import Division from './Division';
+import UserInput from './components/UserInput';
+import Addition from './components/Addition';
+import Subtraction from './components/Subtraction';
+import Multiplication from './components/Multiplication';
+import Division from './components/Division';
 
 const PopUp = ({ title, message }) => {
   console.log(title);
