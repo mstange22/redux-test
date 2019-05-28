@@ -1,50 +1,11 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './App.css';
 import UserInput from './components/UserInput';
 import Addition from './components/Addition';
 import Subtraction from './components/Subtraction';
 import Multiplication from './components/Multiplication';
 import Division from './components/Division';
-
-const PopUp = ({ title, message }) => {
-  console.log(title);
-  return (
-    <div
-      style={{
-        textAlign: 'left',
-        height: 100,
-        width: 400,
-        position:
-        'fixed',
-        top: 200,
-        left: '50%',
-        marginLeft: -220,
-        backgroundColor: '#f4f442',
-        border: 'solid 1px black',
-        borderRadius: 10,
-        display: 'flex',
-        justifyContent: 'flex-start',
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        padding: 20,
-        flexDirection: 'column',
-      }}
-    >
-      <div className="popup-title">
-        {`Pop-Up Says "${title}"`}
-      </div>
-      <div className="popup-message">
-        {message}
-      </div>
-    </div>
-  );
-};
-
-PopUp.propTypes = {
-  title: PropTypes.string.isRequired,
-  message: PropTypes.string.isRequired,
-};
+import PopUp from './components/PopUp';
 
 class App extends Component {
   constructor(props) {
@@ -61,7 +22,7 @@ class App extends Component {
   }
 
   render() {
-    // const { showPopUp } = this.state;
+    const { showPopUp } = this.state;
     return (
       <div className="app">
         { this.renderPopUp() }
@@ -70,9 +31,9 @@ class App extends Component {
           <Subtraction />
         </div>
         <div className="middle">
-          {/* <button type="submit" onClick={() => this.setState({ showPopUp: !showPopUp })}>
+          <button type="submit" onClick={() => this.setState({ showPopUp: !showPopUp })}>
             Pop-Up
-          </button> */}
+          </button>
           <UserInput />
         </div>
         <div className="bottom">
