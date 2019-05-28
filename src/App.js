@@ -32,8 +32,10 @@ class App extends Component {
         </div>
         <div className="middle">
           <button type="submit" onClick={() => this.setState({ showPopUp: !showPopUp })}>
-            Pop-Up
+            Show Pop-Up
           </button>
+          <br />
+          <br />
           <UserInput />
         </div>
         <div className="bottom">
