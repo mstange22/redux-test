@@ -23,7 +23,6 @@ const mapStateToProps = state => ({
   b: parseInt(state.b, 10),
 });
 
-const mapDispatchToProps = {
-};
+const mapDispatchToProps = {};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Subtraction);
