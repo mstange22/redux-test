@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-const Addition = ({ a, b }) => (
+export const Addition = ({ a, b }) => (
   <div className="addition-container">
     <h2>Addition</h2>
     <h2>{a}</h2>

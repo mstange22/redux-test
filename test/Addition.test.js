@@ -1,18 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Addition from '../src/components/Addition';
+import { Addition } from '../src/components/Addition';
 
-xtest('This is a test', () => {
+test('This is a test', () => {
+  const props = { a: 0, b: 0 };
   const component = renderer.create(
-    <Addition />,
-    // <div className="addition-container">
-    //   <h2>Addition</h2>
-    //   <h2>0</h2>
-    //   <h2>+</h2>
-    //   <h2>0</h2>
-    //   <h2>=</h2>
-    //   <h2>0</h2>
-    // </div>,
+    <Addition {...props} />,
   );
   const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
