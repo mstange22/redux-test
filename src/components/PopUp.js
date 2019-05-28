@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const PopUp = ({ title, message }) => (
   <div
+    className="pop-up"
     style={{
       textAlign: 'center',
       height: 100,
