@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> snapshot test 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="top"
+  >
+    <div
+      className="addition-container"
+    >
+      <h2>
+        Addition
+      </h2>
+      <h2>
+        0
+      </h2>
+      <h2>
+        +
+      </h2>
+      <h2>
+        0
+      </h2>
+      <h2>
+        =
+      </h2>
+      <h2
+        className="result"
+      >
+        0
+      </h2>
+    </div>
+    <div
+      className="subtraction-container"
+    >
+      <h2>
+        Subtraction
+      </h2>
+      <h2>
+        0
+      </h2>
+      <h2>
+        -
+      </h2>
+      <h2>
+        0
+      </h2>
+      <h2>
+        =
+      </h2>
+      <h2>
+        0
+      </h2>
+    </div>
+  </div>
+  <div
+    className="middle"
+  >
+    <button
+      onClick={[Function]}
+      type="submit"
+    >
+      Show Pop-Up
+    </button>
+    <br />
+    <br />
+    <div
+      className="user-input-container"
+    >
+      <b>
+        Redux Calculator
+      </b>
+      <br />
+      Enter two values
+      <div
+        className="input-container"
+      >
+        <input
+          autoComplete="off"
+          autoFocus={true}
+          className="user-input"
+          name="a"
+          onChange={[Function]}
+          value={0}
+        />
+        <br />
+        <input
+          autoComplete="off"
+          className="user-input"
+          name="b"
+          onChange={[Function]}
+          value={0}
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="bottom"
+  >
+    <div
+      className="multiplication-container"
+    >
+      <h2>
+        Multiplication
+      </h2>
+      <h2>
+        0
+      </h2>
+      <h2>
+        *
+      </h2>
+      <h2>
+        0
+      </h2>
+      <h2>
+        =
+      </h2>
+      <h2>
+        0
+      </h2>
+    </div>
+    <div
+      className="division-container"
+    >
+      <h2>
+        Division
+      </h2>
+      <h2>
+        0
+      </h2>
+      <h2>
+        /
+      </h2>
+      <h2>
+        0
+      </h2>
+      <h2>
+        =
+      </h2>
+      <h2>
+        Infinity
+      </h2>
+    </div>
+  </div>
+</div>
+`;
