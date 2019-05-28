@@ -9,7 +9,7 @@ export const Addition = ({ a, b }) => (
     <h2>+</h2>
     <h2>{b}</h2>
     <h2>=</h2>
-    <h2>{a + b}</h2>
+    <h2 className="result">{a + b}</h2>
   </div>
 );
 
