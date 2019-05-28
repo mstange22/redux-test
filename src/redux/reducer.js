@@ -1,29 +1,10 @@
-// initial state
+// import * from './actions';
+import * as types from './constants';
+
 const initialState = {
   a: 0,
   b: 0,
 };
-
-// constants
-const types = {
-  SET_VALUE_A: 'SET_VALUE_A',
-  SET_VALUE_B: 'SET_VALUE_B',
-};
-
-// actions
-export const setValueA = a => ({
-  type: types.SET_VALUE_A,
-  payload: {
-    a,
-  },
-});
-
-export const setValueB = b => ({
-  type: types.SET_VALUE_B,
-  payload: {
-    b,
-  },
-});
 
 // reducer
 export const reducer = (state = initialState, action = {}) => {
@@ -37,3 +18,5 @@ export const reducer = (state = initialState, action = {}) => {
       return state;
   }
 };
+
+// module.exports = reducer;

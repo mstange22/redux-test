@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { setValueA, setValueB } from '../redux/reducer';
+import { setValueA, setValueB } from '../redux/actions';
 
 const UserInput = (props) => {
   const onChange = (e) => {
