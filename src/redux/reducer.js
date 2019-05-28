@@ -1,14 +1,7 @@
-// import * from './actions';
 import * as types from './constants';
+import { initialState } from './initialState';
 
-const initialState = {
-  a: 0,
-  b: 0,
-};
-
-// reducer
 export const reducer = (state = initialState, action = {}) => {
-  // console.log(action);
   switch (action.type) {
     case types.SET_VALUE_A:
       return { ...state, a: action.payload.a };
@@ -18,5 +11,3 @@ export const reducer = (state = initialState, action = {}) => {
       return state;
   }
 };
-
-// module.exports = reducer;
