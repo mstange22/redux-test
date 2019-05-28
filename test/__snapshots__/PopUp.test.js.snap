@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`changes the class when hovered 1`] = `
+exports[`<Pop-Up /> snapshot test 1`] = `
 <div
+  className="pop-up"
   style={
     Object {
       "backgroundColor": "#f4f442",
