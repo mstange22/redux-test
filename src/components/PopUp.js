@@ -6,7 +6,7 @@ const PopUp = ({ title, message }) => {
   return (
     <div
       style={{
-        textAlign: 'left',
+        textAlign: 'center',
         height: 100,
         width: 400,
         position:
@@ -23,9 +23,10 @@ const PopUp = ({ title, message }) => {
         flexDirection: 'column',
       }}
     >
-      <div className="popup-title">
+      <div className="popup-title" style={{ fontWeight: 700 }}>
         {`Pop-Up Says "${title}"`}
       </div>
+      <br />
       <div className="popup-message">
         {message}
       </div>
