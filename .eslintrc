@@ -37,7 +37,9 @@
       "aspects": [ "noHref", "invalidHref", "preferButton" ]
     }],
     "react/destructuring-assignment": 0,
-    "jsx-a11y/no-autofocus": 0
+    "jsx-a11y/no-autofocus": 0,
+    "import/prefer-default-export": 0,
+    "import/no-named-as-default": 0
   },
   "plugins": ["jest"]
 }
