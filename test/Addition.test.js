@@ -22,17 +22,17 @@ describe('<Addition />', () => {
   test('is addition', () => {
     expect(shallowComponent.containsMatchingElement(<h2>+</h2>)).toBe(true);
   });
+  test('has equals', () => {
+    expect(shallowComponent.containsMatchingElement(<h2>=</h2>)).toBe(true);
+  });
+});
+
+describe('<Addition /> snapshot', () => {
   test('snapshot test', () => {
     const component = renderer.create(
       <Addition {...props} />,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
-  });
-});
-
-describe('more <Addition />', () => {
-  test('has equals', () => {
-    expect(shallowComponent.containsMatchingElement(<h2>=</h2>)).toBe(true);
   });
 });
