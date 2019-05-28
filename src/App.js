@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
 import UserInput from './components/UserInput';
 import Addition from './components/Addition';
 import Subtraction from './components/Subtraction';
 import Multiplication from './components/Multiplication';
 import Division from './components/Division';
 import PopUp from './components/PopUp';
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class App extends Component {
         </div>
         <div className="middle">
           <button type="submit" onClick={() => this.setState({ showPopUp: !showPopUp })}>
-            Show Pop-Up
+            {`${this.state.showPopUp ? 'Hide' : 'Show'} Pop-Up`}
           </button>
           <br />
           <br />
