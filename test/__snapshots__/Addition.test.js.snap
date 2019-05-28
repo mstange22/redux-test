@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`This is a test 1`] = `
+exports[`testing Addition component snapshot test 1`] = `
 <div
   className="addition-container"
 >
@@ -19,7 +19,9 @@ exports[`This is a test 1`] = `
   <h2>
     =
   </h2>
-  <h2>
+  <h2
+    className="result"
+  >
     0
   </h2>
 </div>
