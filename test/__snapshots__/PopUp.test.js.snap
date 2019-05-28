@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`changes the class when hovered 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#f4f442",
+      "border": "solid 1px black",
+      "borderRadius": 10,
+      "display": "flex",
+      "flexDirection": "column",
+      "height": 100,
+      "justifyContent": "flex-start",
+      "left": "50%",
+      "marginLeft": -220,
+      "padding": 20,
+      "position": "fixed",
+      "textAlign": "center",
+      "top": 200,
+      "width": 400,
+    }
+  }
+>
+  <div
+    className="popup-title"
+    style={
+      Object {
+        "fontWeight": 700,
+      }
+    }
+  >
+    Pop-Up Says "Pop-Up Title"
+  </div>
+  <br />
+  <div
+    className="popup-message"
+  >
+    Your message goes here
+  </div>
+</div>
+`;
